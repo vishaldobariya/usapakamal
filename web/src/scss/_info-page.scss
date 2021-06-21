@@ -1,0 +1,43 @@
+@import 'variables';
+
+.info-page {
+  color: #fff;
+
+  margin: 40px 0;
+
+  &-container {
+    background: rgba(3, 5, 4, .8);
+  }
+
+  &-logo {
+    text-align: right;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100px;
+      @include media-breakpoint-down(sm) {
+        width: 60px;
+
+      }
+    }
+  }
+
+  h1,
+  .h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-family: $ff;
+    font-size: 26px;
+    margin-top: 30px;
+    text-align: left;
+  }
+
+  p {
+    font-weight: 300;
+  }
+}

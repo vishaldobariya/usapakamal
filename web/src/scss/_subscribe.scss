@@ -1,0 +1,122 @@
+.subscribe {
+  background: #3d3a39;
+  border-top: 3.75px solid $primary;
+  padding-bottom: 20px;
+  padding-top: 78px;
+
+  h2 {
+    color: #fff;
+    font-family: $ff;
+    font-size: 26.81px;
+    text-transform: none;
+  }
+
+  &-form {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 0;
+    max-width: 350px;
+    width: 100%;
+    @include media-breakpoint-down(md) {
+      flex-wrap: wrap;
+    }
+  }
+
+  .form-group {
+    appearance: none;
+    flex-grow: 1;
+    margin-bottom: 0;
+    margin-right: 5px;
+    position: relative;
+    // background: #f6f5f3;
+    @include media-breakpoint-down(md) {
+      flex-basis: 100%;
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+
+    &:first-child {
+      flex-basis: 70px;
+      flex-grow: 0;
+    }
+  }
+
+  .form-control {
+    // background: $black;
+    background: #f6f5f3;
+    // border: 1px solid $light;
+    border: 1px solid $primary;
+    border-radius: 0;
+    color: $primary;
+    font-size: 13px;
+    padding: 0 10pxpx;
+    // background: transparent;
+    position: relative;
+    z-index: 2;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+    }
+
+    &.is-invalid {
+      &::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: red;
+        opacity: 1; /* Firefox */
+      }
+
+      &:input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: red;
+      }
+
+      &::input-placeholder {
+        /* Microsoft Edge */
+        color: red;
+      }
+    }
+  }
+
+  .help-block {
+    // position: absolute;
+    // z-index: 0;
+    // top: 7px;
+    // left: 10px;
+  }
+
+  label {
+    display: none;
+  }
+
+  .help-block {
+    // position: absolute;
+  }
+
+  .btn {
+    background: $primary;
+    color: #fff;
+    font-family: $ff;
+    font-size: 12.54px;
+    padding: 9px 23px 6px;
+    @include media-breakpoint-down(md) {
+      margin: 0 auto;
+    }
+
+    &:hover {
+      background: #fff;
+      color: $primary;
+    }
+  }
+
+  &-footer {
+    color: #fff;
+    font-size: 11px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+}

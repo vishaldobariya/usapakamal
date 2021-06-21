@@ -1,0 +1,49 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymlinks
+    RewriteEngine On
+</IfModule>
+
+RewriteEngine on
+#RewriteCond %{HTTPS} off
+#RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+#RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+#RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} (.*)
+RewriteCond %{REQUEST_URI} /$ [NC]
+RewriteRule ^(.*)(/)$ $1 [L,R=301]
+
+<IfModule mod_rewrite.c>
+    RewriteCond %{REQUEST_URI} ^/.*
+    RewriteRule ^(.*)$ web/$1 [L]
+
+    RewriteCond %{REQUEST_URI} !^/web/
+    RewriteCond %{REQUEST_FILENAME} !-f [OR]
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^.*$ web/index.php
+</IfModule>
+<IfModule php7_module>
+   php_flag display_errors Off
+   php_value max_execution_time 300
+   php_value max_input_time -1
+   php_value max_input_vars 10000
+   php_value memory_limit 1024M
+   php_value post_max_size 10000M
+   php_value session.gc_maxlifetime 1440
+   #php_value session.save_path "/var/cpanel/php/sessions/ea-php72"
+   php_value upload_max_filesize 10000M
+   php_flag zlib.output_compression Off
+</IfModule>
+<IfModule lsapi_module>
+   php_flag display_errors Off
+   php_value max_execution_time 300
+   php_value max_input_time -1
+   php_value max_input_vars 10000
+   php_value memory_limit 1024M
+   php_value post_max_size 10000M
+   php_value session.gc_maxlifetime 1440
+   #php_value session.save_path "/var/cpanel/php/sessions/ea-php72"
+   php_value upload_max_filesize 10000M
+   php_flag zlib.output_compression Off
+</IfModule>

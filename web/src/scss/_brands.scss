@@ -1,0 +1,115 @@
+.brands {
+  @include media-breakpoint-down(sm) {
+    margin: auto;
+    padding: 10px 0 0;
+  }
+
+  .row {
+    @include media-breakpoint-down(sm) {
+      justify-content: center;
+    }
+  }
+
+  &-item {
+    // background-size: 10.625em 66.8125em;
+    background-position: center center;
+    // background-image: url(/images/sprite-logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    font-size: 1em;
+    margin: 0 auto 20px;
+    padding: 0.3125em 0;
+    padding-bottom: 67%;
+    width: 100%;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 10px;
+      padding-bottom: 57%;
+    }
+  }
+
+  &-chivas {
+    background-image: url(/images/brands/chivas.svg);
+    // background-position: 0 -17.375em;
+    // height: 2.3125em;
+    // width: 9.0625em;
+  }
+
+  &-don-julio {
+    background-image: url(/images/brands/don-julio.svg;);
+    // background-position: 0 -25.5em;
+    // height: 4.5em;
+    // width: 10.0625em;
+  }
+
+  &-perrier-jouet {
+    background-position: 0 -57.3125em;
+    height: 3.875em;
+    width: 10.625em;
+  }
+
+  &-johnnie-walker-blue-label {
+    background-image: url(/images/johnnie-walker-blue-label.svg);
+  }
+
+  &-macallan {
+    background-position: 0 -46em;
+    height: 5.6875em;
+    width: 9.875em;
+  }
+
+  &-avion-espresso {
+    background-position: 0 0;
+    height: 5.625em;
+    width: 6.75em;
+  }
+
+  &-jameson {
+    background-position: 0 -38.125em;
+    height: 3.5em;
+    width: 9.9375em;
+  }
+
+  &-pernod {
+    background-position: 0 -51.6875em;
+    height: 5.625em;
+    width: 10.375em;
+  }
+
+  &-glenlivet {
+    background-position: 0 -32.9375em;
+    height: 5.1875em;
+    width: 8.5em;
+  }
+
+  &-ciroc {
+    background-position: 0 -22em;
+    height: 3.5em;
+    width: 9.9375em;
+  }
+}
+
+.brand-item {
+  @media (max-width: 600px) {
+    flex-basis: 45% !important;
+    margin-bottom: 10px;
+    max-width: 45% !important;
+  }
+  @include media-breakpoint-down(sm) {
+    &:nth-child(6) ~ div {
+      display: none !important;
+    }
+  }
+}
+
+.brands-page.brands {
+  @include media-breakpoint-down(md) {
+    padding: 0 15px;
+  }
+
+  .brand-item {
+    @include media-breakpoint-down(sm) {
+      display: flex !important;
+    }
+  }
+}

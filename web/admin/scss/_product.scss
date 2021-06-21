@@ -1,0 +1,122 @@
+.product {
+  &-item {
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  &-img {
+    &-icon {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      width: 30px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .zoomImg {
+      height: auto !important;
+      min-width: 1000px;
+    }
+  }
+
+  &-title {
+    background: #fff;
+    color: #333;
+    display: block;
+    // font-family: $ffs;
+    font-size: 23px;
+    left: 100%;
+    margin-bottom: 0;
+    padding: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    z-index: 9;
+  }
+
+  &-description {
+    .product-cart {
+      align-items: center;
+      display: flex;
+      margin-top: 30px;
+    }
+
+    .quantity {
+      margin-right: 7px;
+      position: relative;
+      width: 90px;
+
+      input {
+        width: 100%;
+      }
+    }
+
+    .btn {
+      background: $primary;
+      color: #fff;
+      height: 100%;
+      padding: 9px 23px;
+    }
+  }
+
+  &-meta-name {
+    font-family: $ff;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  &-meta-text {
+    font-family: $ff;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  &-tabs {
+    margin-top: 30px;
+    // width: 100%;
+
+    .nav-tabs,
+    .nav-tabs li,
+    .quantity {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .nav-tabs {
+      border: none;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .nav-tabs li {
+      color: #222;
+      font-size: 18px;
+      letter-spacing: 0.025em;
+      line-height: 1em;
+
+      a {
+        border: 0;
+        border: none;
+        display: inline-block;
+        font-size: 16px;
+        padding: 0 25px 0 0;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        vertical-align: top;
+
+        &::after,
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    .nav-tabs li a.active,
+    .nav-tabs li a:hover {
+      color: $primary;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+$text: #000;
+$primary: #ae894f;
+$light: #a89e8a;
+$grey: #919191;
+$danger: #cc4f5b;
+$font-size-base: 16;
+// $font-family-sans-serif: 'proxima-nova', sans-serif;
+$font-family-sans-serif: 'Opininon', sans-serif;
+$font-family-secondary: 'Corbel', sans-serif;
+
+$ff: $font-family-sans-serif;
+$ffs: $font-family-secondary;
+$fft: 'MrsEavesOT-Roman', sans-serif;
+$ffm: 'The Bredan Demo', sans-serif;
+$ff-mont: 'Montserrat', sans-serif;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1500px,
+);
+
+$transition: all 0.6s ease;

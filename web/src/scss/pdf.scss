@@ -1,0 +1,72 @@
+.pdf {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.fz-26{
+  font-size: 26px;
+}
+.text-primary{
+color: #b59049;
+}
+.header {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  //   text-transform: uppercase;
+}
+
+.grid {
+  .col {
+    border-top: 2px slid #000;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px 5px 30px;
+    width: 46%;
+  }
+
+  .col-1 {
+    padding-right: 2%;
+  }
+
+  .col-2 {
+    padding-left: 2%;
+  }
+
+  p {
+    line-height: 1.3;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .detail-title {
+    float: left;
+    width: 40%;
+  }
+
+  .detail-data {
+    float: left;
+    width: 60%;
+  }
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.item {
+  margin-bottom: 60px;
+}

@@ -1,0 +1,149 @@
+.glider-contain {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.glider {
+  margin: 0 auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  overflow-y: hidden;
+  position: relative;
+  transform: translateZ(0);
+}
+
+.glider-track {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  transform: translateZ(0);
+  width: 100%;
+  z-index: 1;
+}
+
+.glider.draggable {
+  cursor: grab;
+  cursor: grab;
+  user-select: none;
+}
+
+.glider.draggable .glider-slide img {
+  pointer-events: none;
+  user-select: none;
+}
+
+.glider.drag {
+  cursor: grabbing;
+  cursor: grabbing;
+}
+
+.glider-slide {
+  align-content: center;
+  justify-content: center;
+  user-select: none;
+  width: 100%;
+}
+
+.glider-slide img {
+  max-width: 100%;
+}
+
+.glider::-webkit-scrollbar {
+  height: 0;
+  opacity: 0;
+}
+
+.glider-prev,
+.glider-next {
+  background: none;
+  border: 0;
+  color: #666;
+  cursor: pointer;
+  font-size: 40px;
+  left: -23px;
+  line-height: 1;
+  opacity: 1;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  text-decoration: none;
+  top: 30%;
+  transition: opacity .5s cubic-bezier(.17, .67, .83, .67),
+    color .5s cubic-bezier(.17, .67, .83, .67);
+  user-select: none;
+  z-index: 2;
+}
+
+.glider-prev:hover,
+.glider-next:hover,
+.glider-prev:focus,
+.glider-next:focus {
+  color: #a89cc8;
+}
+
+.glider-next {
+  left: auto;
+  right: -23px;
+}
+
+.glider-next.disabled,
+.glider-prev.disabled {
+  color: #666;
+  cursor: default;
+  opacity: .25;
+}
+
+.glider-slide {
+  min-width: 150px;
+}
+
+.glider-hide {
+  opacity: 0;
+}
+
+.glider-dots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  user-select: none;
+}
+
+.glider-dot {
+  background: none;
+  background: #ccc;
+  border: 0;
+  border-radius: 999px;
+  color: #ccc;
+  cursor: pointer;
+  display: block;
+  height: 12px;
+  margin: 7px;
+  outline: none;
+  padding: 0;
+  user-select: none;
+  width: 12px;
+}
+
+.glider-dot:hover,
+.glider-dot:focus,
+.glider-dot.active {
+  background: #a89cc8;
+}
+@media(max-width: 36em) {
+  .glider::-webkit-scrollbar {
+    appearance: none;
+    height: 3px;
+    opacity: 1;
+    width: 7px;
+  }
+
+  .glider::-webkit-scrollbar-thumb {
+    background-color: rgba(156, 156, 156, .25);
+    border-radius: 99px;
+    box-shadow: 0 0 1px rgba(255, 255, 255, .25);
+    opacity: 1;
+  }
+}

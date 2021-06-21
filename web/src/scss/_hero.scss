@@ -1,0 +1,101 @@
+.hero {
+  background-color: #000;
+  height: 100%;
+
+  .slick-list,
+  .slick-track {
+    height: 100%;
+    width: 100%;
+  }
+
+  .slick-slide > div {
+    height: 100%;
+  }
+
+  &-wrapper {
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    @include media-breakpoint-down(xl) {
+      height: 560px;
+    }
+    @include media-breakpoint-down(sm) {
+      height: calc(100vh - 76px);
+    }
+  }
+
+  &-slider {
+    &-progress {
+      background: $primary;
+      height: 5px;
+      left: 0;
+      position: absolute;
+      top: -1px;
+      width: 100%;
+      z-index: 99;
+    }
+
+    &-mobile {
+      display: none;
+      @include media-breakpoint-down(sm) {
+        display: block;
+      }
+    }
+
+    &-desktop {
+      display: block;
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+  }
+
+  &-progress {
+    background: #eee;
+    height: 5px;
+    width: 0%;
+    // transition: width 0.2s ease;
+  }
+
+  .slick-dots {
+    bottom: 25px;
+    position: absolute;
+  }
+
+  .slick-dots li.slick-active button::before {
+    color: $primary;
+    font-size: 10px;
+  }
+
+  .slick-dots li button::before {
+    font-size: 10px;
+  }
+
+  &-slide {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block !important;
+    height: 700px;
+    position: relative;
+    width: 100%;
+    @include media-breakpoint-down(xl) {
+      height: 560px;
+    }
+    @include media-breakpoint-down(sm) {
+      height: 100%;
+    }
+
+    img {
+      display: block;
+      height: 100%;
+      left: 50%;
+      object-fit: cover;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
+  }
+}

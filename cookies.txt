@@ -1,0 +1,15 @@
+# HTTP Cookie File downloaded with cookies.txt by Genuinous @genuinous
+# This file can be used by wget, curl, aria2c and other standard compliant tools.
+# Usage Examples:
+#   1) wget -x --load-cookies cookies.txt "https://www.diageonow.com/s/brand"
+#   2) curl --cookie cookies.txt "https://www.diageonow.com/s/brand"
+#   3) aria2c --load-cookies cookies.txt "https://www.diageonow.com/s/brand"
+#
+.www.diageonow.com	TRUE	/s	TRUE	0	renderCtx	%7B%22pageId%22%3A%2271555bb2-8654-4651-90af-973e1217ca69%22%2C%22schema%22%3A%22Published%22%2C%22viewType%22%3A%22Published%22%2C%22brandingSetId%22%3A%22b13346bb-8e32-4a15-ae78-35aa142f76e6%22%2C%22audienceIds%22%3A%226Au2G000000TN57%22%7D
+.diageonow.com	TRUE	/	FALSE	1664459764	_ga	GA1.2.756974342.1601281353
+www.diageonow.com	FALSE	/	FALSE	1632817354	pctrk	29942c68-515d-4d56-ab65-eee3012f9f2b
+www.diageonow.com	FALSE	/	FALSE	1608806010	LSKey[c]RememberMe	TRUE
+www.diageonow.com	FALSE	/	FALSE	1608806010	LSKey[c]takeTour	TRUE
+www.diageonow.com	FALSE	/	FALSE	0	LSKey[c]sigInNotification	TRUE
+www.diageonow.com	FALSE	/	TRUE	1601398563	sfdc-stream	!CoMi0GyMqod4VKalck0buhNsm4JlJsGR27Pcpf4bZgW6a4XlSGEgIKgh1QFQi7KtWFUDKfSPDJ+uzk8=
+.diageonow.com	TRUE	/	FALSE	1601474164	_gid	GA1.2.40295384.1601387764

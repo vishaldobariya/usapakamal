@@ -1,0 +1,6 @@
+/node_modules/
+/web/assets/
+/web/dist/
+/web/admin/gleek/
+/vendor/
+**/*.js
